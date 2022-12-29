@@ -34,15 +34,41 @@
 // }
 // calculateEngravingPrice("JavaScript is in my blood", 10);
 
-function slugify(title) {
-  // Change code below this line
+// function slugify(title) {
+// Change code below this line
 
-  // title = title.split(" ");
-  // title = title.join("-");
-  console.log(slug);
-  // let slug = title.join("-");
-  // console.log(slug);
+// title = title.split(" ");
+// title = title.join("-");
+// console.log(slug);
+// let slug = title.join("-");
+// console.log(slug);
 
-  // Change code above this line
-}
-slugify("Arrays for begginers");
+// Change code above this line
+// }
+// slugify("Arrays for begginers");
+
+// SUMM OF NUMBERS
+// 1
+// function calculateTotal(number) {
+//   // Change code below this line
+//   let summ = 0;
+//   for (let i = 1; i <= number; i++) {
+//     summ += i;
+//   }
+//   console.log(summ);
+//   // Change code above this line
+// }
+// calculateTotal(3);
+// 2
+// function calculateTotal(number) {
+//   if (n == 1) return 1;
+//   return n + calculateTotal(n - 1);
+// }
+
+// console.lof(calculateTotal(100));
+// 3
+// function calculateTotal(number) {
+//   return (n * (n + 1)) / 2;
+// }
+
+// console.log(calculateTotal(100));
