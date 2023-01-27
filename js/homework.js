@@ -316,7 +316,21 @@
 //   // Change code above this line
 // };
 
-const scores = [27, 2, 41, 4, 7, 3, 75];
-const asc = [...scores].sort((a, b) => a - b);
+// const scores = [27, 2, 41, 4, 7, 3, 75];
+// const asc = [...scores].sort((a, b) => a - b);
 
-console.log(asc); // [2, 27, 3, 4, 41, 7, 75]
+// console.log(asc); // [2, 27, 3, 4, 41, 7, 75]
+// const name = "Smoked3";
+// const pizzas = ["Ultracheese", "Smoked", "Four meats"];
+// console.log(pizzas.indexOf(name));
+const pizzaName = "Smoked66";
+const pizzaPalace = {
+  pizzas: ["Ultracheese", "Smoked", "Four meats"],
+  order(pizzaName, onSuccess, onError) {
+    if (pizzaPalace.pizzas.includes(pizzaName) === -1) {
+      onError(pizzaName);
+      return "There is no pizza with a name <имя пиццы> in the assortment.";
+    }
+  },
+};
+console.log(pizzaPalace.pizzas.includes(pizzaName));
