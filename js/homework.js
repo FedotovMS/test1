@@ -619,30 +619,40 @@
 //   .filter((friend, index, array) => array.indexOf(friend) === index);
 // console.log(getshit);
 
-class StringBuilder {
-  constructor(initialValue) {
-    this.value = initialValue;
-  }
-  getValue() {
-    return this.value;
-  }
-  padEnd(str) {
-    this.value = `${this.value}${str}`;
-  }
-  padStart(str) {
-    this.value = `${str}${this.value}`;
-  }
-  padBoth(str) {
-    this.value = `${str}${this.value}${str}`;
+// class StringBuilder {
+//   constructor(initialValue) {
+//     this.value = initialValue;
+//   }
+//   getValue() {
+//     return this.value;
+//   }
+//   padEnd(str) {
+//     this.value = `${this.value}${str}`;
+//   }
+//   padStart(str) {
+//     this.value = `${str}${this.value}`;
+//   }
+//   padBoth(str) {
+//     this.value = `${str}${this.value}${str}`;
+//   }
+// }
+
+// // Change code above this line
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
+
+function betterThanAverage(classPoints, yourPoints) {
+  let point = 0;
+  for (let i = 0; i <= classPoints.length; i++) {
+    if ((point += i) / classPoints.length > yourPoints) {
+      return True;
+    }
+    return False;
   }
 }
-
-// Change code above this line
-const builder = new StringBuilder(".");
-console.log(builder.getValue()); // "."
-builder.padStart("^");
-console.log(builder.getValue()); // "^."
-builder.padEnd("^");
-console.log(builder.getValue()); // "^.^"
-builder.padBoth("=");
-console.log(builder.getValue()); // "=^.^="
