@@ -650,9 +650,11 @@
 function betterThanAverage(classPoints, yourPoints) {
   let point = 0;
   for (let i = 0; i <= classPoints.length; i++) {
-    if ((point += i) / classPoints.length > yourPoints) {
-      return True;
-    }
-    return False;
+    point += classPoints[i] / classPoints.length;
+    console.log(point);
+    // if ((point += i) / classPoints.length > yourPoints) {
+    //   return True;
+    // }
   }
 }
+betterThanAverage([25, 50, 100, 15], 75);
