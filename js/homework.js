@@ -647,14 +647,24 @@
 // builder.padBoth("=");
 // console.log(builder.getValue()); // "=^.^="
 
-function betterThanAverage(classPoints, yourPoints) {
-  let point = 0;
-  for (let i = 0; i <= classPoints.length; i++) {
-    point += classPoints[i] / classPoints.length;
-    console.log(point);
-    // if ((point += i) / classPoints.length > yourPoints) {
-    //   return True;
-    // }
+// function betterThanAverage(classPoints, yourPoints) {
+//   let point = 0;
+//   for (let i = 0; i <= classPoints.length; i++) {
+//     point += classPoints[i] / classPoints.length;
+//     console.log(point);
+//     // if ((point += i) / classPoints.length > yourPoints) {
+//     //   return True;
+//     // }
+//   }
+// }
+// betterThanAverage([25, 50, 100, 15], 75);
+function squareDigits(num) {
+  const numbers = String(num).split("");
+  const newArray = [];
+  for (const number of numbers) {
+    newArray.push(Math.pow(number, 2));
   }
+  console.log(+newArray.join(""));
 }
-betterThanAverage([25, 50, 100, 15], 75);
+
+squareDigits(91190);
