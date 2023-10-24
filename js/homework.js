@@ -658,13 +658,13 @@
 //   }
 // }
 // betterThanAverage([25, 50, 100, 15], 75);
-function squareDigits(num) {
-  const numbers = String(num).split("");
-  const newArray = [];
-  for (const number of numbers) {
-    newArray.push(Math.pow(number, 2));
-  }
-  console.log(+newArray.join(""));
-}
+// function squareDigits(num) {
+//   const numbers = String(num).split("");
+//   const newArray = [];
+//   for (const number of numbers) {
+//     newArray.push(Math.pow(number, 2));
+//   }
+//   console.log(+newArray.join(""));
+// }
 
-squareDigits(91190);
+// squareDigits(91190);
